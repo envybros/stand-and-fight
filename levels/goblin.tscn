@@ -1,0 +1,111 @@
+[gd_scene load_steps=15 format=3 uid="uid://bunonnhuh1c81"]
+
+[ext_resource type="Texture2D" uid="uid://dx0xmq4op0iwd" path="res://mobs/Goblin-Sheet.png" id="1_i3aka"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rjqwf"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sr1kn"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cll65"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_umar1"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qmdc"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4eqds"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukgjs"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yn0i7"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g8r5o"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oa20l"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(192, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wbbwr"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(256, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_huo8y"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(320, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kprjk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rjqwf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sr1kn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cll65")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_umar1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qmdc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4eqds")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ukgjs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yn0i7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g8r5o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oa20l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wbbwr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_huo8y")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[node name="Goblin" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_kprjk")
+animation = &"run"
