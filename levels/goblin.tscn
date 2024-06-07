@@ -1,10 +1,38 @@
-[gd_scene load_steps=17 format=3 uid="uid://bunonnhuh1c81"]
+[gd_scene load_steps=24 format=3 uid="uid://bunonnhuh1c81"]
 
 [ext_resource type="Texture2D" uid="uid://dx0xmq4op0iwd" path="res://assets/mobs/Goblin-Sheet.png" id="1_i3aka"]
 [ext_resource type="Script" path="res://levels/goblin.gd" id="1_itl6l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6c1sd"]
 size = Vector2(42, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ftnmj"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o71o1"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ry0p"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(128, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_03dqd"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(192, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uj00f"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(256, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0ifu"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(320, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_akwsi"]
+atlas = ExtResource("1_i3aka")
+region = Rect2(384, 128, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rjqwf"]
 atlas = ExtResource("1_i3aka")
@@ -58,6 +86,32 @@ region = Rect2(320, 64, 64, 64)
 animations = [{
 "frames": [{
 "duration": 0.5,
+"texture": SubResource("AtlasTexture_ftnmj")
+}, {
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_o71o1")
+}, {
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_8ry0p")
+}, {
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_03dqd")
+}, {
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_uj00f")
+}, {
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_g0ifu")
+}, {
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_akwsi")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_rjqwf")
 }, {
 "duration": 0.5,
@@ -75,7 +129,7 @@ animations = [{
 "duration": 0.5,
 "texture": SubResource("AtlasTexture_4eqds")
 }],
-"loop": true,
+"loop": false,
 "name": &"idle",
 "speed": 5.0
 }, {
@@ -98,7 +152,7 @@ animations = [{
 "duration": 0.5,
 "texture": SubResource("AtlasTexture_huo8y")
 }],
-"loop": true,
+"loop": false,
 "name": &"run",
 "speed": 5.0
 }]
@@ -112,6 +166,7 @@ shape = SubResource("RectangleShape2D_6c1sd")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_kprjk")
 animation = &"run"
-frame_progress = 0.900969
+frame = 5
+frame_progress = 1.0
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Timer" type="Timer" parent="."]
