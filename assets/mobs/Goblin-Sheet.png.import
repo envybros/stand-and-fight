@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx0xmq4op0iwd"
-path="res://.godot/imported/Goblin-Sheet.png-9577e01cdeeebc2eb2e74e722f05e0b8.ctex"
+path="res://.godot/imported/Goblin-Sheet.png-12e8d3a64a59002ac7bdbfd9953525e9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mobs/Goblin-Sheet.png"
-dest_files=["res://.godot/imported/Goblin-Sheet.png-9577e01cdeeebc2eb2e74e722f05e0b8.ctex"]
+source_file="res://assets/mobs/Goblin-Sheet.png"
+dest_files=["res://.godot/imported/Goblin-Sheet.png-12e8d3a64a59002ac7bdbfd9953525e9.ctex"]
 
 [params]
 

@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://bunonnhuh1c81"]
+[gd_scene load_steps=17 format=3 uid="uid://bunonnhuh1c81"]
 
-[ext_resource type="Texture2D" uid="uid://dx0xmq4op0iwd" path="res://mobs/Goblin-Sheet.png" id="1_i3aka"]
+[ext_resource type="Texture2D" uid="uid://dx0xmq4op0iwd" path="res://assets/mobs/Goblin-Sheet.png" id="1_i3aka"]
+[ext_resource type="Script" path="res://levels/goblin.gd" id="1_itl6l"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rjqwf"]
 atlas = ExtResource("1_i3aka")
@@ -53,50 +54,45 @@ region = Rect2(320, 64, 64, 64)
 [sub_resource type="SpriteFrames" id="SpriteFrames_kprjk"]
 animations = [{
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_rjqwf")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_sr1kn")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_cll65")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_umar1")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_2qmdc")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_4eqds")
 }],
 "loop": true,
 "name": &"idle",
 "speed": 5.0
 }, {
-"frames": [],
-"loop": true,
-"name": &"new_animation",
-"speed": 5.0
-}, {
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_ukgjs")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_yn0i7")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_g8r5o")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_oa20l")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_wbbwr")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_huo8y")
 }],
 "loop": true,
@@ -104,8 +100,20 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Goblin" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6c1sd"]
+size = Vector2(42, 58)
+
+[node name="Goblin" type="CharacterBody2D"]
+script = ExtResource("1_itl6l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_kprjk")
 animation = &"run"
+frame_progress = 0.900969
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6c1sd")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
