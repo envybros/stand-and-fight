@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8hespnxvbj5t"]
+
+[ext_resource type="PackedScene" uid="uid://bunonnhuh1c81" path="res://levels/goblin.tscn" id="1_y8o1k"]
+[ext_resource type="PackedScene" uid="uid://cxoiy6eux3jsi" path="res://levels/tile_map.tscn" id="2_c4owa"]
+
+[node name="TestScene2D" type="Node2D"]
+
+[node name="Goblin" parent="." instance=ExtResource("1_y8o1k")]
+position = Vector2(383, 263)
+
+[node name="TileMap" parent="." instance=ExtResource("2_c4owa")]
+position = Vector2(508, 400)
