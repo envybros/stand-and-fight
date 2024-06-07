@@ -3,6 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://dx0xmq4op0iwd" path="res://assets/mobs/Goblin-Sheet.png" id="1_i3aka"]
 [ext_resource type="Script" path="res://levels/goblin.gd" id="1_itl6l"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6c1sd"]
+size = Vector2(42, 58)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_rjqwf"]
 atlas = ExtResource("1_i3aka")
 region = Rect2(0, 0, 64, 64)
@@ -100,20 +103,15 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6c1sd"]
-size = Vector2(42, 58)
-
 [node name="Goblin" type="CharacterBody2D"]
 script = ExtResource("1_itl6l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6c1sd")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_kprjk")
 animation = &"run"
 frame_progress = 0.900969
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_6c1sd")
-
 [node name="Camera2D" type="Camera2D" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
