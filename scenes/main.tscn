@@ -6,13 +6,15 @@
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="Goblin" parent="." instance=ExtResource("1_b8xot")]
 position = Vector2(-119, 51)
+scale = Vector2(1.5, 1.5)
 
 [node name="Knight" parent="." instance=ExtResource("2_0r21e")]
 position = Vector2(9, 48)
 
 [node name="Slime" parent="." instance=ExtResource("3_x72qx")]
 position = Vector2(137, 51)
+scale = Vector2(1.5, 1.5)
+
+[node name="Camera2D" type="Camera2D" parent="."]
