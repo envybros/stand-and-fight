@@ -1,21 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://boy46odgm5sto"]
 
-[ext_resource type="PackedScene" uid="uid://cbojf6x8yao8l" path="res://scenes/characters/goblin.tscn" id="1_b8xot"]
-[ext_resource type="PackedScene" uid="uid://cb73sc1c6thj5" path="res://scenes/characters/knight.tscn" id="2_0r21e"]
-[ext_resource type="PackedScene" uid="uid://cibgdj1xy6i1m" path="res://scenes/characters/slime.tscn" id="3_x72qx"]
+[ext_resource type="PackedScene" uid="uid://2x4d0xcawgr5" path="res://scenes/characters/green_slime.tscn" id="2_x5ktx"]
+[ext_resource type="PackedScene" uid="uid://btichtrrwys4f" path="res://scenes/characters/blue_slime.tscn" id="3_q2cbf"]
+[ext_resource type="PackedScene" uid="uid://cibgdj1xy6i1m" path="res://scenes/characters/red_slime.tscn" id="3_x72qx"]
 
 [node name="Main" type="Node2D"]
-visible = false
-
-[node name="Goblin" parent="." instance=ExtResource("1_b8xot")]
-position = Vector2(-119, 51)
-scale = Vector2(1.5, 1.5)
-
-[node name="Knight" parent="." instance=ExtResource("2_0r21e")]
-position = Vector2(9, 48)
-
-[node name="Slime" parent="." instance=ExtResource("3_x72qx")]
-position = Vector2(137, 51)
-scale = Vector2(1.5, 1.5)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="RedSlime" parent="." instance=ExtResource("3_x72qx")]
+
+[node name="BlueSlime" parent="." instance=ExtResource("3_q2cbf")]
+position = Vector2(-150, 0)
+
+[node name="GreenSlime" parent="." instance=ExtResource("2_x5ktx")]
+position = Vector2(150, 0)
