@@ -1,7 +1,7 @@
 [gd_scene load_steps=24 format=3 uid="uid://bunonnhuh1c81"]
 
 [ext_resource type="Texture2D" uid="uid://dx0xmq4op0iwd" path="res://assets/goblin/Goblin-Sheet.png" id="1_i3aka"]
-[ext_resource type="Script" path="res://levels/goblin.gd" id="1_itl6l"]
+[ext_resource type="Script" path="res://levels/player.gd" id="1_itl6l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6c1sd"]
 size = Vector2(42, 58)

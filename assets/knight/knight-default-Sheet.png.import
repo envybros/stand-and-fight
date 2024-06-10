@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqq8jhb3ivn58"
-path="res://.godot/imported/B_witch_take_damage.png-0629c472291ab71ec55c4a0098660261.ctex"
+uid="uid://irc7oxm0bpl5"
+path="res://.godot/imported/knight-default-Sheet.png-628701bccb13b80eb7c1402ba2ed207e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/b_witch/B_witch_take_damage.png"
-dest_files=["res://.godot/imported/B_witch_take_damage.png-0629c472291ab71ec55c4a0098660261.ctex"]
+source_file="res://assets/knight/knight-default-Sheet.png"
+dest_files=["res://.godot/imported/knight-default-Sheet.png-628701bccb13b80eb7c1402ba2ed207e.ctex"]
 
 [params]
 

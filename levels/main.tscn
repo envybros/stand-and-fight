@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://boy46odgm5sto"]
+
+[ext_resource type="PackedScene" uid="uid://bunonnhuh1c81" path="res://levels/goblin.tscn" id="1_b8xot"]
+[ext_resource type="PackedScene" uid="uid://cb73sc1c6thj5" path="res://levels/knight.tscn" id="2_0r21e"]
+[ext_resource type="PackedScene" uid="uid://cibgdj1xy6i1m" path="res://levels/slime.tscn" id="3_x72qx"]
+[ext_resource type="PackedScene" uid="uid://sd4wjrgnhnbm" path="res://levels/witch.tscn" id="4_64v8w"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Goblin" parent="." instance=ExtResource("1_b8xot")]
+position = Vector2(-238, 54)
+
+[node name="Knight" parent="." instance=ExtResource("2_0r21e")]
+position = Vector2(-158, -115)
+
+[node name="Slime" parent="." instance=ExtResource("3_x72qx")]
+position = Vector2(136, -97)
+
+[node name="Witch" parent="." instance=ExtResource("4_64v8w")]
+position = Vector2(150, 93)
+scale = Vector2(2, 2)
