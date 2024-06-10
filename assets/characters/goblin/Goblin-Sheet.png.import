@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx0xmq4op0iwd"
-<<<<<<<< HEAD:assets/goblin/Goblin-Sheet.png.import
-path="res://.godot/imported/Goblin-Sheet.png-f3766f827d25fd0f005b1e08bcbe8f3f.ctex"
-========
+uid="uid://dsifr1000wpnh"
 path="res://.godot/imported/Goblin-Sheet.png-23a5008a8967f18acb97ee67be1b5fad.ctex"
->>>>>>>> 1-character-movement:assets/characters/goblin/Goblin-Sheet.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assets/goblin/Goblin-Sheet.png.import
-source_file="res://assets/goblin/Goblin-Sheet.png"
-dest_files=["res://.godot/imported/Goblin-Sheet.png-f3766f827d25fd0f005b1e08bcbe8f3f.ctex"]
-========
 source_file="res://assets/characters/goblin/Goblin-Sheet.png"
 dest_files=["res://.godot/imported/Goblin-Sheet.png-23a5008a8967f18acb97ee67be1b5fad.ctex"]
->>>>>>>> 1-character-movement:assets/characters/goblin/Goblin-Sheet.png.import
 
 [params]
 
