@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://boy46odgm5sto"]
+
+[ext_resource type="PackedScene" uid="uid://bunonnhuh1c81" path="res://scenes/characters/goblin.tscn" id="1_b8xot"]
+[ext_resource type="PackedScene" uid="uid://cb73sc1c6thj5" path="res://scenes/characters/knight.tscn" id="2_0r21e"]
+[ext_resource type="PackedScene" uid="uid://cibgdj1xy6i1m" path="res://scenes/characters/slime.tscn" id="3_x72qx"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Goblin" parent="." instance=ExtResource("1_b8xot")]
+position = Vector2(-119, 51)
+
+[node name="Knight" parent="." instance=ExtResource("2_0r21e")]
+position = Vector2(9, 48)
+
+[node name="Slime" parent="." instance=ExtResource("3_x72qx")]
+position = Vector2(137, 51)

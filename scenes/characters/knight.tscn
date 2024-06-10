@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=3 uid="uid://cb73sc1c6thj5"]
 
-[ext_resource type="Script" path="res://levels/player.gd" id="1_kn07l"]
-[ext_resource type="Texture2D" uid="uid://irc7oxm0bpl5" path="res://assets/knight/knight-default-Sheet.png" id="2_c71kt"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_kn07l"]
+[ext_resource type="Texture2D" uid="uid://irc7oxm0bpl5" path="res://assets/characters/knight/knight-default-Sheet.png" id="2_c71kt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6c1sd"]
 size = Vector2(42, 58)

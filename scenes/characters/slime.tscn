@@ -1,7 +1,7 @@
 [gd_scene load_steps=24 format=3 uid="uid://cibgdj1xy6i1m"]
 
-[ext_resource type="Script" path="res://levels/player.gd" id="1_cvq2c"]
-[ext_resource type="Texture2D" uid="uid://s6rar313j23y" path="res://assets/slime/Slime_Anime-Sheet.png" id="2_qr5nm"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_cvq2c"]
+[ext_resource type="Texture2D" uid="uid://s6rar313j23y" path="res://assets/characters/slime/Slime_Anime-Sheet.png" id="2_qr5nm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6c1sd"]
 size = Vector2(42, 58)

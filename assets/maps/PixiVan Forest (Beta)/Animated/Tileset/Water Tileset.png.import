@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://irc7oxm0bpl5"
-path="res://.godot/imported/knight-default-Sheet.png-628701bccb13b80eb7c1402ba2ed207e.ctex"
+uid="uid://cpyj8hxl43jut"
+path="res://.godot/imported/Water Tileset.png-cf856fb93012fb6e8cf4826a37e8c648.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/knight/knight-default-Sheet.png"
-dest_files=["res://.godot/imported/knight-default-Sheet.png-628701bccb13b80eb7c1402ba2ed207e.ctex"]
+source_file="res://assets/maps/PixiVan Forest (Beta)/Animated/Tileset/Water Tileset.png"
+dest_files=["res://.godot/imported/Water Tileset.png-cf856fb93012fb6e8cf4826a37e8c648.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://s6rar313j23y"
-path="res://.godot/imported/Slime_Anime-Sheet.png-435e979010a29a90880dc35d3f4ac09c.ctex"
+uid="uid://r7fut6y0ixtm"
+path="res://.godot/imported/Water Flora.png-ab004d8b0a9a52a5e9928bf9c0788b72.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/slime/Slime_Anime-Sheet.png"
-dest_files=["res://.godot/imported/Slime_Anime-Sheet.png-435e979010a29a90880dc35d3f4ac09c.ctex"]
+source_file="res://assets/maps/PixiVan Forest (Beta)/Water Flora.png"
+dest_files=["res://.godot/imported/Water Flora.png-ab004d8b0a9a52a5e9928bf9c0788b72.ctex"]
 
 [params]
 
