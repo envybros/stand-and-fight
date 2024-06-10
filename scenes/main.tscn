@@ -4,7 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://cb73sc1c6thj5" path="res://scenes/characters/knight.tscn" id="2_0r21e"]
 [ext_resource type="PackedScene" uid="uid://cibgdj1xy6i1m" path="res://scenes/characters/slime.tscn" id="3_x72qx"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Main" type="Node2D"]
+visible = false
 
 [node name="Goblin" parent="." instance=ExtResource("1_b8xot")]
 position = Vector2(-119, 51)
