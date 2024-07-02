@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bijq5qakmfbh3"]
+
+[ext_resource type="PackedScene" uid="uid://dwv05hule1h57" path="res://assets/district_a/District A.fbx" id="1_f1lu0"]
+[ext_resource type="PackedScene" uid="uid://brluujy5a83m5" path="res://assets/district_b/District B.fbx" id="2_h2hii"]
+
+[node name="Map3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0121255, -1.19209e-07, -0.0066247)
+
+[node name="Root Scene" parent="." instance=ExtResource("1_f1lu0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19815, 1.19209e-07, -1.55818)
+
+[node name="Root Scene2" parent="." instance=ExtResource("2_h2hii")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4304, 1.19209e-07, 30.2465)

@@ -10,9 +10,22 @@ config_version=5
 
 [application]
 
-config/name="MMO"
+config/name="Stand and Fight!!"
+config/name_localized={
+"ko_KR": "일어나 싸워라!!"
+}
+config/description="최강자를 고르기 위한 싸움"
+config/version="v0.0.1"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "orange",
+"res://nodes/": "yellow",
+"res://tools/": "purple"
+}
 
 [input]
 
@@ -41,8 +54,3 @@ attack00={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"key_label":0,"unicode":0,"echo":false,"script":null)
 ]
 }
-
-[rendering]
-
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
