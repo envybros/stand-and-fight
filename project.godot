@@ -28,6 +28,10 @@ folder_colors={
 "res://tools/": "purple"
 }
 
+[filesystem]
+
+import/fbx/enabled=false
+
 [input]
 
 move_left={
