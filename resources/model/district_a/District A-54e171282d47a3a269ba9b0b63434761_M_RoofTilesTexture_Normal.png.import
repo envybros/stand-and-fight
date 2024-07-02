@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ceaedcohufw6w"
+path.s3tc="res://.godot/imported/District A-54e171282d47a3a269ba9b0b63434761_M_RoofTilesTexture_Normal.png-672ac41677776f49df8219603aa98c4a.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "4a9254f7086bce648478d6996d957eb5"
+}
+
+[deps]
+
+source_file="res://resources/model/district_a/District A-54e171282d47a3a269ba9b0b63434761_M_RoofTilesTexture_Normal.png"
+dest_files=["res://.godot/imported/District A-54e171282d47a3a269ba9b0b63434761_M_RoofTilesTexture_Normal.png-672ac41677776f49df8219603aa98c4a.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://resources/district_a/District A-54e171282d47a3a269ba9b0b63434761_M_RoofTilesTexture_Normal.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

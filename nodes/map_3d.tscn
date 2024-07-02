@@ -1,20 +1,108 @@
-[gd_scene load_steps=4 format=3 uid="uid://bijq5qakmfbh3"]
+[gd_scene load_steps=10 format=3 uid="uid://bijq5qakmfbh3"]
 
-[ext_resource type="PackedScene" uid="uid://dwv05hule1h57" path="res://resources/district_a/District A.fbx" id="1_f1lu0"]
-[ext_resource type="PackedScene" uid="uid://brluujy5a83m5" path="res://resources/district_b/District B.fbx" id="2_h2hii"]
-[ext_resource type="PackedScene" uid="uid://c5hhnghuag5c4" path="res://resources/market_2/Market 2.fbx" id="3_sojar"]
+[ext_resource type="PackedScene" uid="uid://dwv05hule1h57" path="res://resources/model/district_a/District A.fbx" id="1_f1lu0"]
+[ext_resource type="PackedScene" uid="uid://brluujy5a83m5" path="res://resources/model/district_b/District B.fbx" id="2_h2hii"]
+[ext_resource type="Script" path="res://nodes/FloatingBoard.gd" id="2_wawms"]
+[ext_resource type="PackedScene" uid="uid://c5hhnghuag5c4" path="res://resources/model/market_2/Market 2.fbx" id="3_sojar"]
+[ext_resource type="PackedScene" uid="uid://lqo01qlts7b0" path="res://nodes/water_plane.tscn" id="4_cvaxh"]
+[ext_resource type="PackedScene" uid="uid://c3hmwjll5er3b" path="res://resources/model/sm_boat/SM_boat_fareast.fbx" id="6_j0hay"]
+[ext_resource type="PackedScene" uid="uid://djlb36rqoc27v" path="res://resources/model/sm_platform/SM_platform_wooden.fbx" id="7_6andc"]
+[ext_resource type="PackedScene" uid="uid://cihi0v622f71d" path="res://resources/model/sm_tree_fareast_02/SM_tree_fareast_02.fbx" id="7_idida"]
+[ext_resource type="PackedScene" uid="uid://bjcin1h8f8lqp" path="res://resources/model/sm_tree_large_fareast_01/SM_tree_large_fareast_01.fbx" id="8_g0r5t"]
 
 [node name="Map3D" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0767503, -0.0370542, -0.0591779)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0767503, 0.293121, -0.0591779)
 
-[node name="Root Scene" parent="." instance=ExtResource("1_f1lu0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19815, 1.19209e-07, -1.55818)
+[node name="Entities" type="Node" parent="."]
 
-[node name="Root Scene2" parent="." instance=ExtResource("2_h2hii")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4304, 1.19209e-07, 30.2465)
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Entities"]
+transform = Transform3D(-0.618253, -0.571901, 0.539159, 0.0613613, 0.648757, 0.758518, -0.78358, 0.502039, -0.366003, 0.0767503, 2.0149, -0.0591779)
 
-[node name="Root Scene3" parent="." instance=ExtResource("3_sojar")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.6084, 1.19209e-07, 22.4646)
+[node name="Camera3D" type="Camera3D" parent="Entities"]
+transform = Transform3D(1, 0, 0, 0, 0.914706, 0.40412, 0, -0.40412, 0.914706, 0.0767503, 2.36179, 3.56058)
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.932269, 0.314324, -0.179093, -0.0171041, 0.532797, 0.84607, 0.36136, -0.785702, 0.502087, 0, 18.1999, 0)
+[node name="Ocean" parent="Entities" instance=ExtResource("4_cvaxh")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0.0767503, -0.399462, -0.0591779)
+skeleton = NodePath("../..")
+
+[node name="Levels" type="Node" parent="."]
+
+[node name="Market" parent="Levels" instance=ExtResource("3_sojar")]
+transform = Transform3D(0.0442644, 0, 0.999019, 0, 1, 0, -0.999019, 0, 0.0442644, -2.57995, 0.105968, -19.8223)
+
+[node name="Market2" parent="Levels" instance=ExtResource("3_sojar")]
+transform = Transform3D(0.0442644, 0, 0.999019, 0, -1.70972, 0, -0.999019, 0, 0.0442644, -2.57995, 0.105968, -19.8223)
+
+[node name="Root Scene" parent="Levels" instance=ExtResource("2_h2hii")]
+transform = Transform3D(-0.030207, 0, -0.999544, 0, 1, 0, 0.999544, 0, -0.030207, 5.51215, 0.207349, 21.2113)
+
+[node name="Root Scene3" parent="Levels" instance=ExtResource("2_h2hii")]
+transform = Transform3D(-0.030207, 0, -0.999544, 0, -1.96304, 0, 0.999544, 0, -0.030207, 5.51215, 0.207349, 21.2113)
+
+[node name="Root Scene2" parent="Levels" instance=ExtResource("1_f1lu0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.8036, 0.138249, -14.0367)
+
+[node name="Root Scene4" parent="Levels" instance=ExtResource("1_f1lu0")]
+transform = Transform3D(1, 0, 0, 0, -1.68638, 0, 0, 0, 1, 19.8036, 0.138249, -14.0367)
+
+[node name="SM_Boat" parent="Levels" instance=ExtResource("6_j0hay")]
+transform = Transform3D(0.326871, 0, -0.945069, 0, 1, 0, 0.945069, 0, 0.326871, -15.5767, -0.452069, -12.8092)
+
+[node name="SM_Platform_wooden" parent="Levels" instance=ExtResource("7_6andc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.6136, 0, -7.06803)
+
+[node name="SM_Platform_wooden2" parent="Levels" instance=ExtResource("7_6andc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6136, 0, -7.06803)
+
+[node name="SM_Platform_wooden3" parent="Levels" instance=ExtResource("7_6andc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.6136, 0, -4.25303)
+
+[node name="SM_Platform_wooden4" parent="Levels" instance=ExtResource("7_6andc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6136, 0, -4.25303)
+
+[node name="SM_Platform_wooden5" parent="Levels" instance=ExtResource("7_6andc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.6136, 0, -1.43875)
+
+[node name="SM_Platform_wooden6" parent="Levels" instance=ExtResource("7_6andc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6136, 0, -1.43875)
+
+[node name="SM_Platform_wooden7" parent="Levels" instance=ExtResource("7_6andc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.6136, 0, 1.37626)
+
+[node name="SM_Platform_wooden8" parent="Levels" instance=ExtResource("7_6andc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6136, 0, 1.37626)
+
+[node name="SM_Platform_wooden9" parent="Levels" instance=ExtResource("7_6andc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.6196, 0, -7.06803)
+
+[node name="SM_Platform_wooden10" parent="Levels" instance=ExtResource("7_6andc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.6196, 0, -7.06803)
+
+[node name="SM_Platform_wooden11" parent="Levels" instance=ExtResource("7_6andc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.6196, 0, -4.25303)
+
+[node name="SM_Platform_wooden12" parent="Levels" instance=ExtResource("7_6andc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.6196, 0, -4.25303)
+
+[node name="SM_Platform_wooden13" parent="Levels" instance=ExtResource("7_6andc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.6196, 0, -1.43875)
+
+[node name="SM_Platform_wooden14" parent="Levels" instance=ExtResource("7_6andc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.6196, 0, -1.43875)
+
+[node name="SM_Platform_wooden15" parent="Levels" instance=ExtResource("7_6andc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.6196, 0, 1.37626)
+
+[node name="SM_Platform_wooden16" parent="Levels" instance=ExtResource("7_6andc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.6196, 0, 1.37626)
+
+[node name="tree1" parent="Levels" instance=ExtResource("7_idida")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.28453, 1.90735e-06, 4.31856)
+
+[node name="tree2" parent="Levels" instance=ExtResource("8_g0r5t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.75816, 0, -4.66641)
+
+[node name="FloatingBoard" type="CSGBox3D" parent="."]
+transform = Transform3D(5.14912, 0, 0, 0, 9.51947, 0, 0, 0, 4.74295, 0, -0.842168, 0)
+size = Vector3(3.24121, 0.202576, 3.41211)
+script = ExtResource("2_wawms")

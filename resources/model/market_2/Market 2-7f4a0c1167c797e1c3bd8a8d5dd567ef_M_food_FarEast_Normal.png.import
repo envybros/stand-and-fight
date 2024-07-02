@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://lqs41mwd8spl"
+path.s3tc="res://.godot/imported/Market 2-7f4a0c1167c797e1c3bd8a8d5dd567ef_M_food_FarEast_Normal.png-7c81c87c38f73e8334ebd37703e51228.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "2826b6fd38bd7e1b6ceb2d434402ccd7"
+}
+
+[deps]
+
+source_file="res://resources/model/market_2/Market 2-7f4a0c1167c797e1c3bd8a8d5dd567ef_M_food_FarEast_Normal.png"
+dest_files=["res://.godot/imported/Market 2-7f4a0c1167c797e1c3bd8a8d5dd567ef_M_food_FarEast_Normal.png-7c81c87c38f73e8334ebd37703e51228.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://models/market_2/Market 2-7f4a0c1167c797e1c3bd8a8d5dd567ef_M_food_FarEast_Normal.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
