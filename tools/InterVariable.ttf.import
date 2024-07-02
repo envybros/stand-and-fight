@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bq0mexffkjmob"
-path="res://.godot/imported/InterVariable.ttf-27953eb25293381d170dbdf4d8d11a19.fontdata"
+path="res://.godot/imported/InterVariable.ttf-aae31e26c78a916a1984505424ff9455.fontdata"
 
 [deps]
 
-source_file="res://resources/fonts/InterVariable.ttf"
-dest_files=["res://.godot/imported/InterVariable.ttf-27953eb25293381d170dbdf4d8d11a19.fontdata"]
+source_file="res://tools/InterVariable.ttf"
+dest_files=["res://.godot/imported/InterVariable.ttf-aae31e26c78a916a1984505424ff9455.fontdata"]
 
 [params]
 
