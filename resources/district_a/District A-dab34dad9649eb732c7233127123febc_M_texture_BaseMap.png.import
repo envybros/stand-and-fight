@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://gjw1s67hi6gy"
+path.s3tc="res://.godot/imported/District A-dab34dad9649eb732c7233127123febc_M_texture_BaseMap.png-5d1ee9dff99566cc297ba2ee5d812730.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "ca182b000ac7f5a1c221d1a4ca0d791a"
+}
+
+[deps]
+
+source_file="res://resources/district_a/District A-dab34dad9649eb732c7233127123febc_M_texture_BaseMap.png"
+dest_files=["res://.godot/imported/District A-dab34dad9649eb732c7233127123febc_M_texture_BaseMap.png-5d1ee9dff99566cc297ba2ee5d812730.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

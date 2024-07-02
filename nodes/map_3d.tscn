@@ -1,13 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://bijq5qakmfbh3"]
+[gd_scene load_steps=4 format=3 uid="uid://bijq5qakmfbh3"]
 
-[ext_resource type="PackedScene" uid="uid://dwv05hule1h57" path="res://assets/district_a/District A.fbx" id="1_f1lu0"]
-[ext_resource type="PackedScene" uid="uid://brluujy5a83m5" path="res://assets/district_b/District B.fbx" id="2_h2hii"]
+[ext_resource type="PackedScene" uid="uid://dwv05hule1h57" path="res://resources/district_a/District A.fbx" id="1_f1lu0"]
+[ext_resource type="PackedScene" uid="uid://brluujy5a83m5" path="res://resources/district_b/District B.fbx" id="2_h2hii"]
+[ext_resource type="PackedScene" uid="uid://c5hhnghuag5c4" path="res://resources/market_2/Market 2.fbx" id="3_sojar"]
 
 [node name="Map3D" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0121255, -1.19209e-07, -0.0066247)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0767503, -0.0370542, -0.0591779)
 
 [node name="Root Scene" parent="." instance=ExtResource("1_f1lu0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19815, 1.19209e-07, -1.55818)
 
 [node name="Root Scene2" parent="." instance=ExtResource("2_h2hii")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4304, 1.19209e-07, 30.2465)
+
+[node name="Root Scene3" parent="." instance=ExtResource("3_sojar")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.6084, 1.19209e-07, 22.4646)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.932269, 0.314324, -0.179093, -0.0171041, 0.532797, 0.84607, 0.36136, -0.785702, 0.502087, 0, 18.1999, 0)

@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bcncc54jqq6tu"
+path.s3tc="res://.godot/imported/District B-58ae3f86cd3188e6cd6fb79678d5fb23_M_rooftiles_fareast_Normal.png-8f3e60dd4a96d67c1d5231dc0d3879c6.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "cd0272dc36b990fcfd63cd758c9186e7"
+}
+
+[deps]
+
+source_file="res://resources/district_b/District B-58ae3f86cd3188e6cd6fb79678d5fb23_M_rooftiles_fareast_Normal.png"
+dest_files=["res://.godot/imported/District B-58ae3f86cd3188e6cd6fb79678d5fb23_M_rooftiles_fareast_Normal.png-8f3e60dd4a96d67c1d5231dc0d3879c6.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://models/district_b/District B-58ae3f86cd3188e6cd6fb79678d5fb23_M_rooftiles_fareast_Normal.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://rypqv7j5orhs"
+path.s3tc="res://.godot/imported/Market 2-dc8ed96a85aa3be93c3fe50e52797761_M_stone_bricks_Normal.png-87e1a5dd198101ee6ec44475b89aeb7d.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "ca0c2aba7a19e8c615678447823a5dd6"
+}
+
+[deps]
+
+source_file="res://resources/market_2/Market 2-dc8ed96a85aa3be93c3fe50e52797761_M_stone_bricks_Normal.png"
+dest_files=["res://.godot/imported/Market 2-dc8ed96a85aa3be93c3fe50e52797761_M_stone_bricks_Normal.png-87e1a5dd198101ee6ec44475b89aeb7d.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://assets/market_2/Market 2-dc8ed96a85aa3be93c3fe50e52797761_M_stone_bricks_Normal.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
