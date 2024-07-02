@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://ctuiqiu676j7b"]
+[gd_scene load_steps=4 format=3 uid="uid://ctuiqiu676j7b"]
 
 [ext_resource type="PackedScene" uid="uid://bwlg3r42lhwqa" path="res://resources/model/SM_tower/SM_tower.glb" id="1_8hbv8"]
 [ext_resource type="PackedScene" uid="uid://n85f6yjm68yj" path="res://resources/model/M_gatehouse/M_gatehouse.glb" id="2_vtfur"]
+[ext_resource type="PackedScene" uid="uid://dcf61b3rdvdcb" path="res://nodes/terrain/water_plane.tscn" id="3_mw5au"]
 
 [node name="Map3D" type="Node3D"]
 
@@ -10,3 +11,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.65008, 0, -5.20084)
 
 [node name="M_gatehouse2" parent="." instance=ExtResource("2_vtfur")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05393, 0, -5.35152)
+
+[node name="WaterPlane" parent="." instance=ExtResource("3_mw5au")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.10057, 2, -4.27457)
