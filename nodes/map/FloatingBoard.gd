@@ -1,21 +1,23 @@
-extends CSGBox3D
+extends Node3D
 
 var dir := true
 
+@export var start_y : float
+@export var end_y : float
 
 func _ready() -> void:
 	_tween_start()
 	
 
 func animate(tween: Tween) -> void:
-	var target_y := 0.0;
+	var target_y := start_y;
 	if dir:
-		target_y = 0.2
-		
+		target_y = end_y
+	
 	dir = !dir
 	
 	print(target_y)
-	tween.tween_property(self, "position", Vector3(0, target_y, 0), 1.5)
+	tween.tween_property(self, "position", Vector3(position.x, target_y, position.z), 1.5)
 	tween.set_ease(Tween.EASE_IN_OUT)
 	tween.finished.connect(Callable(self, "_tween_start"))
 
