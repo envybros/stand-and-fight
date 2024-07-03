@@ -1,0 +1,16 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://6q3s3row5o2m"]
+
+[ext_resource type="Shader" path="res://shaders/fake_interior.gdshader" id="1_hdo01"]
+[ext_resource type="Texture2D" uid="uid://bnrhksua0gsdd" path="res://resources/image/japanese_room2.jpg" id="2_4c8ai"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_hdo01")
+shader_parameter/rooms = Vector2(1, 1)
+shader_parameter/room_seed = 0.0
+shader_parameter/atlas_rooms = Vector2(1, 1)
+shader_parameter/depth = 0.5
+shader_parameter/emission_curoff = 0.5
+shader_parameter/emission_strength = 1.0
+shader_parameter/noise_strength = 0.2
+shader_parameter/room_texture = ExtResource("2_4c8ai")

@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=3 uid="uid://c54l6akjvs721"]
+
+[ext_resource type="Shader" path="res://shaders/fake_interior.gdshader" id="1_7f5a2"]
+[ext_resource type="Texture2D" uid="uid://b1dj7lydx1c5y" path="res://resources/image/japanese_room.jpg" id="2_mtbvn"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_pt6uh"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_dhw4h"]
+noise = SubResource("FastNoiseLite_pt6uh")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2x1hg"]
+render_priority = 0
+shader = ExtResource("1_7f5a2")
+shader_parameter/rooms = Vector2(1, 1)
+shader_parameter/room_seed = 0.0
+shader_parameter/atlas_rooms = Vector2(1, 1)
+shader_parameter/depth = 0.5
+shader_parameter/emission_curoff = 0.5
+shader_parameter/emission_strength = 1.0
+shader_parameter/noise_strength = 0.2
+shader_parameter/room_texture = ExtResource("2_mtbvn")
+shader_parameter/noise_texture = SubResource("NoiseTexture2D_dhw4h")
+
+[sub_resource type="QuadMesh" id="QuadMesh_lrqh6"]
+material = SubResource("ShaderMaterial_2x1hg")
+size = Vector2(3, 3)
+
+[node name="FakeInterior" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47966, 2.16506, 0)
+mesh = SubResource("QuadMesh_lrqh6")
