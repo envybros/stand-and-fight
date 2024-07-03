@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://ctuiqiu676j7b"]
 
-[ext_resource type="PackedScene" uid="uid://bwlg3r42lhwqa" path="res://resources/FarEastPackage/SM_tower/SM_tower.glb" id="1_8hbv8"]
-[ext_resource type="PackedScene" uid="uid://n85f6yjm68yj" path="res://resources/FarEastPackage/M_gatehouse/M_gatehouse.glb" id="2_vtfur"]
+[ext_resource type="PackedScene" uid="uid://bwlg3r42lhwqa" path="res://resources/building/sm_tower/SM_tower.glb" id="1_8hbv8"]
+[ext_resource type="PackedScene" uid="uid://n85f6yjm68yj" path="res://resources/building/m_gatehouse/M_gatehouse.glb" id="2_vtfur"]
 [ext_resource type="PackedScene" uid="uid://dcf61b3rdvdcb" path="res://nodes/terrain/water_plane.tscn" id="3_mw5au"]
-[ext_resource type="PackedScene" uid="uid://bwk6ivalg5x8q" path="res://resources/FarEastPackage/SM_platform_preset/SM_platform_preset.glb" id="4_ovx54"]
-[ext_resource type="PackedScene" uid="uid://4xah6nrrrgh7" path="res://resources/FarEastPackage/SM_wall_city/SM_wall_city.glb" id="5_fh0v3"]
+[ext_resource type="PackedScene" uid="uid://bwk6ivalg5x8q" path="res://resources/building/sm_platform_preset/SM_platform_preset.glb" id="4_ovx54"]
+[ext_resource type="PackedScene" uid="uid://4xah6nrrrgh7" path="res://resources/building/sm_wall_city/SM_wall_city.glb" id="5_fh0v3"]
 
 [node name="Map3D" type="Node3D"]
 
