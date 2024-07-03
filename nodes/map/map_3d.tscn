@@ -1,16 +1,32 @@
-[gd_scene load_steps=4 format=3 uid="uid://ctuiqiu676j7b"]
+[gd_scene load_steps=6 format=3 uid="uid://ctuiqiu676j7b"]
 
-[ext_resource type="PackedScene" uid="uid://bwlg3r42lhwqa" path="res://resources/model/SM_tower/SM_tower.glb" id="1_8hbv8"]
-[ext_resource type="PackedScene" uid="uid://n85f6yjm68yj" path="res://resources/model/M_gatehouse/M_gatehouse.glb" id="2_vtfur"]
+[ext_resource type="PackedScene" uid="uid://bwlg3r42lhwqa" path="res://resources/FarEastPackage/SM_tower/SM_tower.glb" id="1_8hbv8"]
+[ext_resource type="PackedScene" uid="uid://n85f6yjm68yj" path="res://resources/FarEastPackage/M_gatehouse/M_gatehouse.glb" id="2_vtfur"]
 [ext_resource type="PackedScene" uid="uid://dcf61b3rdvdcb" path="res://nodes/terrain/water_plane.tscn" id="3_mw5au"]
+[ext_resource type="PackedScene" uid="uid://bwk6ivalg5x8q" path="res://resources/FarEastPackage/SM_platform_preset/SM_platform_preset.glb" id="4_ovx54"]
+[ext_resource type="PackedScene" uid="uid://4xah6nrrrgh7" path="res://resources/FarEastPackage/SM_wall_city/SM_wall_city.glb" id="5_fh0v3"]
 
 [node name="Map3D" type="Node3D"]
 
+[node name="WaterPlane" parent="." instance=ExtResource("3_mw5au")]
+
 [node name="SM_tower2" parent="." instance=ExtResource("1_8hbv8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.65008, 0, -5.20084)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.65008, 0, 20.6408)
 
 [node name="M_gatehouse2" parent="." instance=ExtResource("2_vtfur")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05393, 0, -5.35152)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05393, 0, 20.1142)
 
-[node name="WaterPlane" parent="." instance=ExtResource("3_mw5au")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.10057, 2, -4.27457)
+[node name="SM_platform_preset2" parent="." instance=ExtResource("4_ovx54")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.97787, 0)
+
+[node name="SM_platform_preset3" parent="." instance=ExtResource("4_ovx54")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.97787, -19.2925)
+
+[node name="SM_platform_preset4" parent="." instance=ExtResource("4_ovx54")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.1458, -1.97787, 0)
+
+[node name="SM_platform_preset5" parent="." instance=ExtResource("4_ovx54")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.1458, -1.97787, -19.2925)
+
+[node name="SM_wall_city2" parent="." instance=ExtResource("5_fh0v3")]
+transform = Transform3D(0.922229, 0.00724256, 0.386577, -0.00619949, 0.999973, -0.00394494, -0.386595, 0.00124159, 0.922249, 17.3253, 1.90735e-06, 16.4043)

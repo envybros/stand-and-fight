@@ -4,7 +4,7 @@
 
 [sub_resource type="QuadMesh" id="QuadMesh_pr4a0"]
 material = ExtResource("1_el0u2")
-size = Vector2(20, 20)
+size = Vector2(200, 200)
 orientation = 1
 
 [node name="WaterPlane" type="MeshInstance3D"]
