@@ -8,25 +8,36 @@
 
 [node name="Map3D" type="Node3D"]
 
-[node name="WaterPlane" parent="." instance=ExtResource("3_mw5au")]
+[node name="Buildings" type="Node" parent="."]
 
-[node name="SM_tower2" parent="." instance=ExtResource("1_8hbv8")]
+[node name="SM_tower2" parent="Buildings" instance=ExtResource("1_8hbv8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.65008, 0, 20.6408)
 
-[node name="M_gatehouse2" parent="." instance=ExtResource("2_vtfur")]
+[node name="M_gatehouse2" parent="Buildings" instance=ExtResource("2_vtfur")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05393, 0, 20.1142)
 
-[node name="SM_platform_preset2" parent="." instance=ExtResource("4_ovx54")]
+[node name="SM_platform_preset2" parent="Buildings" instance=ExtResource("4_ovx54")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.97787, 0)
 
-[node name="SM_platform_preset3" parent="." instance=ExtResource("4_ovx54")]
+[node name="SM_platform_preset3" parent="Buildings" instance=ExtResource("4_ovx54")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.97787, -19.2925)
 
-[node name="SM_platform_preset4" parent="." instance=ExtResource("4_ovx54")]
+[node name="SM_platform_preset4" parent="Buildings" instance=ExtResource("4_ovx54")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.1458, -1.97787, 0)
 
-[node name="SM_platform_preset5" parent="." instance=ExtResource("4_ovx54")]
+[node name="SM_platform_preset5" parent="Buildings" instance=ExtResource("4_ovx54")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.1458, -1.97787, -19.2925)
 
-[node name="SM_wall_city2" parent="." instance=ExtResource("5_fh0v3")]
+[node name="SM_wall_city2" parent="Buildings" instance=ExtResource("5_fh0v3")]
 transform = Transform3D(0.922229, 0.00724256, 0.386577, -0.00619949, 0.999973, -0.00394494, -0.386595, 0.00124159, 0.922249, 17.3253, 1.90735e-06, 16.4043)
+
+[node name="SM_tower3" parent="Buildings" instance=ExtResource("1_8hbv8")]
+transform = Transform3D(1, 0, 0, 0, -0.890429, 0, 0, 0, 1, -5.65008, 1.2019e-06, 20.6408)
+
+[node name="M_gatehouse3" parent="Buildings" instance=ExtResource("2_vtfur")]
+transform = Transform3D(1, 0, 0, 0, -0.890429, 0, 0, 0, 1, 5.05393, 1.2019e-06, 20.1142)
+
+[node name="SM_wall_city3" parent="Buildings" instance=ExtResource("5_fh0v3")]
+transform = Transform3D(0.933037, -0.00644862, 0.38946, -0.00627215, -0.890354, -0.00397436, -0.391126, -0.00110548, 0.929127, 17.3253, -4.96456e-07, 16.4043)
+
+[node name="WaterPlane" parent="." instance=ExtResource("3_mw5au")]
